@@ -22,8 +22,6 @@ import { UnicornComponent } from './unicorn/unicorn.component';
 })
 export class AppInternal {
   @ViewChild(DynamicDirective) dynamicHost: DynamicDirective;
-  private interval: number | undefined;
-  private currentIndex = 1;
   subscription: Subscription;
 
   constructor(private navigationService: NavigationService) {
